@@ -135,10 +135,10 @@ namespace GameOfLife
             {
                 for (var j = 0; j < _sizeY; j++)
                 {
-                    _nextGenerationCells[i, j] = CalculateNextGeneration(i,j);          // UNOPTIMIZED
-//                    CalculateNextGeneration(i, j, ref alive, ref age);   // OPTIMIZED
-//                    nextGenerationCells[i, j].IsAlive = alive;  // OPTIMIZED
-//                    nextGenerationCells[i, j].Age = age;  // OPTIMIZED
+                    _nextGenerationCells[i, j] = CalculateNextGeneration(i, j);          // UNOPTIMIZED
+                    //CalculateNextGeneration(i, j, ref alive, ref age);   // OPTIMIZED
+                    //_nextGenerationCells[i, j].IsAlive = alive;  // OPTIMIZED
+                    //_nextGenerationCells[i, j].Age = age;  // OPTIMIZED
                 }
             }
             UpdateToNextGeneration();
